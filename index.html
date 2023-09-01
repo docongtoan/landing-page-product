@@ -56,15 +56,15 @@
 
 <body data-bs-spy="scroll" data-bs-target="#bsb-tpl-navbar" data-bs-smooth-scroll="true" tabindex="0">
   <!-- Header -->
-  <header id="header" class="sticky-top bsb-tpl-header-sticky bsb-tpl-header-sticky-animationX">
+  <header id="header-nav" class="sticky-top bsb-tpl-header-sticky bsb-tpl-header-sticky-animationX pre-stuck stuck">
 
     <!-- Navbar 1 - Bootstrap Brain Component -->
     <nav id="scrollspyNav"
       class="navbar navbar-expand-lg bsb-tpl-bg-blue bsb-navbar bsb-navbar-hover bsb-navbar-caret bsb-tpl-navbar-sticky"
       data-bsb-sticky-target="#header">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="./assets/img/branding/at-logo.png" class="bsb-tpl-logo" alt="">
+        <a class="navbar-brand" href="./">
+          <img src="./assets/img/branding/at-logo-bran.png" class="bsb-tpl-logo" alt="">
         </a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -86,16 +86,16 @@
                   data-bs-target="#offcanvasNavbar">Trang chủ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#scrollspyServices" data-bs-dismiss="offcanvas"
-                  data-bs-target="#offcanvasNavbar">Dịch vụ</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="#scrollspyAbout" data-bs-dismiss="offcanvas"
                   data-bs-target="#offcanvasNavbar">Giải pháp</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#scrollspyPricing" data-bs-dismiss="offcanvas"
                   data-bs-target="#offcanvasNavbar">Bảng giá</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyServices" data-bs-dismiss="offcanvas"
+                  data-bs-target="#offcanvasNavbar">Dịch vụ</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#scrollspyContact" data-bs-dismiss="offcanvas"
@@ -108,158 +108,74 @@
     </nav>
 
   </header>
-  <!-- Hero 2 - Bootstrap Brain Component -->
-  <section id="scrollspyHero" class="bsb-hero-2 bsb-tpl-bg-blue py-5 py-xl-8 py-xxl-10">
-    <div class="container overflow-hidden">
-      <div class="row gy-3 gy-lg-0 align-items-lg-center justify-content-lg-between">
-        <div class="col-12 col-lg-6 order-1 order-lg-0 wow slideInLeft" data-wow-duration="1s" data-wow-delay="2s">
-          <h1 class="display-3 fw-bolder mb-3">Phầm mềm quản lý<br><mark
-              class="bsb-tpl-highlight bsb-tpl-highlight-blue"><span
-                class="bsb-tpl-font-hw display-2 text-accent fw-normal">sản xuất</span></mark></h1>
-          <p class="fs-4 mb-5">An Thịnh Softwares cung cấp gói giải pháp chuyển đổi số dành cho Doanh nghiệp.</p>
-          <div class="d-grid gap-2 d-sm-flex">
-            <a type="button" class="btn btn-primary bsb-btn-3xl rounded-pill" href="#scrollspyServices">Bảng giá</a>
-            <a type="button" class="btn btn-outline-primary bsb-btn-3xl rounded-pill" href="#scrollspyContact">Liên hệ
-              tư vấn</a>
-          </div>
-        </div>
-        <div class="col-12 col-lg-5 text-center  wow slideInRight" data-wow-duration="2s" data-wow-delay="5s">
-          <figure class="rounded overflow-hidden mb-3 bsb-overlay-hover">
-            <a data-fancybox="gallery" data-src="https://vimeo.com/858921122?share=copy">
-              <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="./assets/img/hero/hero-home.png"
-                alt="">
-            </a>
-            <figcaption>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                <path
-                  d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
-                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
-              </svg>
-              <div class="h6 text-white bsb-hover-fadeInRight mt-2">Xem Video</div>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
-  </section>
+
+
   <!-- Main -->
   <main id="main">
-
-    <!-- Section - Services -->
-    <!-- Service 3 - Bootstrap Brain Component -->
-    <section id="scrollspyServices" class="py-5 py-xl-8 bsb-section-py-xxl-1">
-      <div class="container mb-5 mb-md-6 mb-xl-10 wow slideInDown" data-wow-duration="2s" data-wow-delay="5s">
-        <div class="row justify-content-md-center">
-          <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center">
-            <h2 class="display-3 fw-bolder mb-4">Chúng tôi cung cấp các<br><mark
-                class="bsb-tpl-highlight bsb-tpl-highlight-yellow"><span
-                  class="bsb-tpl-font-hw display-1 text-accent fw-normal">Dịch Vụ</span></mark> bao gồm.</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="container overflow-hidden">
-        <div class="row gy-5 gx-md-4 gy-lg-0 gx-xxl-5 justify-content-center">
-          <div class="col-11 col-sm-6 col-lg-3 text-center wow slideInLeft" data-wow-duration="1s" data-wow-delay="2s">
-            <div class="badge bsb-tpl-bg-yellow text-primary p-3 mb-4">
-              <img src="./assets/img/icon/solution.png" width="26" height="26" />
-            </div>
-            <h4 class="mb-3">Phần mềm giải pháp</h4>
-            <p class="mb-3 text-secondary">Giải pháp của chúng tôi đưa ra giúp các doanh nghiệp ứng dụng công nghệ vào
-              hoạt động kinh doanh, góp phần nâng cao đáng kể hiệu quả kinh doanh...</p>
-            </a>
-          </div>
-          <div class="col-11 col-sm-6 col-lg-3 text-center wow slideInLeft" data-wow-duration="2s" data-wow-delay="3s">
-            <div class="badge bsb-tpl-bg-cyan text-primary p-3 mb-4">
-              <img src="./assets/img/icon/world-wide-web.png" width="26" height="26" />
-            </div>
-            <h4 class="mb-3">Thiết kế website</h4>
-            <p class="mb-3 text-secondary">Thiết kế website theo yêu cầu - giải pháp dành cho Website có tính năng
-              riêng, giao diện độc quyền theo yêu cầu và ý tưởng của khách hàng...</p>
-          </div>
-          <div class="col-11 col-sm-6 col-lg-3 text-center wow slideInLeft" data-wow-duration="3s" data-wow-delay="4s">
-            <div class="badge bsb-tpl-bg-yellow text-primary p-3 mb-4">
-              <img src="./assets/img/icon/domain.png" width="26" height="26" />
-            </div>
-            <h4 class="mb-3">Đăng ký tên miền - domain</h4>
-            <p class="mb-3 text-secondary">Đăng ký tên miền, kiểm tra tên miền domain nhanh chóng, nhiều đuôi tên miền
-              đẹp...</p>
-          </div>
-          <div class="col-11 col-sm-6 col-lg-3 text-center wow slideInLeft" data-wow-duration="4s" data-wow-delay="5s">
-            <div class="badge bsb-tpl-bg-cyan text-primary p-3 mb-4">
-              <img src="./assets/img/icon/web-hosting.png" width="26" height="26" />
-            </div>
-            <h4 class="mb-3">Hosting lưu trữ</h4>
-            <p class="mb-3 text-secondary">Đặc thù kỹ thuật của hệ điều hành hiện đại tân tiến nhất hiện nay, cập nhật
-              thường xuyên các bản vá lỗi...</p>
-          </div>
-          <div class="col-11 col-sm-6 col-lg-3 text-center wow slideInLeft" data-wow-duration="5s" data-wow-delay="5s">
-            <div class="badge bsb-tpl-bg-yellow text-primary p-3 mb-4">
-              <img src="./assets/img/icon/cloud.png" width="26" height="26" />
-            </div>
-            <h4 class="mb-3">Cloud Server</h4>
-            <p class="mb-3 text-secondary">Cloud Server tương thích với nhiều hệ điều hành từ Linux như CentOS, Redhat,
-              Fedora, Ubuntu, Debian, Opensuse đến Windows, Free BSD...</p>
-          </div>
-          <div class="col-11 col-sm-6 col-lg-3 text-center wow slideInLeft" data-wow-duration="6s" data-wow-delay="5s">
-            <div class="badge bsb-tpl-bg-cyan text-primary p-3 mb-4">
-              <img src="./assets/img/icon/mail.png" width="26" height="26" />
-            </div>
-            <h4 class="mb-3">Email Server Pro</h4>
-            <p class="mb-3 text-secondary">Bạn cũng có thể yên tâm với dịch vụ Email vì tính bảo mật cực cao và tính ổn
-              định được rất nhiều chuyên gia trên thế giới đánh giá...</p>
-          </div>
-          <div class="col-11 col-sm-6 col-lg-3 text-center wow slideInLeft" data-wow-duration="7s" data-wow-delay="5s">
-            <div class="badge bsb-tpl-bg-yellow text-primary p-3 mb-4">
-              <img src="./assets/img/icon/ssl-certificate.png" width="26" height="26" />
-            </div>
-            <h4 class="mb-3">SSL Chứng chỉ bảo mật</h4>
-            <p class="mb-3 text-secondary">Cài đặt chứng chỉ SSL cho website được xem là việc bảo mật vô cùng quan trọng
-              đối với mọi trang web. Chứng chỉ SSL là chứng chỉ công nghệ cao...</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section - About -->
-    <section id="scrollspyAbout" class="bsb-tpl-bg-alice-blue py-5 py-xl-8 bsb-section-py-xxl-1">
+    <section id="scrollspyAbout" class="bsb-tpl-bg-blue py-5 bsb-section-py-xxl-1">
       <!-- FAQ 1 - Bootstrap Brain Component -->
       <div class="container">
         <div class="row gy-5 gy-lg-0 align-items-lg-center">
-          <div class="col-12 col-lg-6 wow slideInLeft" data-wow-duration="1s" data-wow-delay="2s">
-            <img class="img-fluid rounded" loading="lazy" src="./assets/img/about/about-img-1.png" alt="">
+          <div class="col-12 col-lg-6 position-relative">
+            <img class="img-fluid rounded" loading="lazy" src="./assets/img/about/banner-hero.gif" alt="">
           </div>
           <div class="col-12 col-lg-6 wow slideInRight" data-wow-duration="3s" data-wow-delay="5s">
             <div class="row justify-content-xl-end">
               <div class="col-12 col-xl-11">
-                <h2 class="display-3 fw-bolder mb-4">Giải Pháp <mark
+                <h2 class="display-3 fw-bolder mb-3">Giải Pháp <mark
                     class="bsb-tpl-highlight bsb-tpl-highlight-blue"><span
                       class="bsb-tpl-font-hw display-1 text-accent fw-normal">Chuyển đổi số</span></mark><br> cho doanh
                   nghiệp.</h2>
-                <p class="fs-4 mb-5">Gói giải pháp cho doanh nghiệp sản xuất</p>
+                <p class="fs-4 mb-3">Gói giải pháp cho doanh nghiệp sản xuất.</p>
                 <div class="accordion accordion-flush" id="accordionExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Gói phần mềm phù hợp với doanh nghiệp như thế nào?
+                        Gói giải pháp gồm những gì?
                       </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        Dành cho doanh nghiệp sản xuất cơ khí chính xác, trực quan và tối ưu thời gian quản lý.
+                        - Phần mềm quản lý sản xuất.
+                        <br />
+                        - Website giới thiệu Doanh nghiệp.
+                        <br />
+                        - Email Pro.
+                        <br />
+                        -Tên miền Quốc tế .com.
+                        <br />
+                        - Hosting website (1 GB).
+                        <br />
+                        - Chứng chỉ bảo mật SSL cho website (https://)
+                        <br />
+                        Với chi phí cố định 1,9 triệu/tháng (Hợp đồng 12 tháng), chi phí này đã bao gồm VAT 0%
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Được tặng kèm những gì khi đăng ký gói giải pháp?
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-controls="collapseTwo">
+                        Gói phần mềm phù hợp với doanh nghiệp như thế nào?
                       </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Dành cho doanh nghiệp sản xuất, trực quan và tối ưu thời gian quản lý.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Được tặng kèm những gì khi đăng ký gói giải pháp?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                       data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         - Tặng 1 website giới thiệu Cty
@@ -281,10 +197,33 @@
         </div>
       </div>
     </section>
+    <!-- Hero 2 - Bootstrap Brain Component -->
+    <section id="scrollspyHero" class="bsb-hero-2 bsb-section-py-xxl-1 py-5 py-xl-8 py-xxl-10">
+      <div class="container overflow-hidden">
+        <div class="row gy-3 gy-lg-0 align-items-lg-center justify-content-lg-between">
+          <div class="col-12 col-lg-6 order-1 order-lg-0 wow slideInLeft" data-wow-duration="1s" data-wow-delay="2s">
+            <h1 class="display-3 fw-bolder mb-3">Phầm mềm quản lý<br><mark
+                class="bsb-tpl-highlight bsb-tpl-highlight-blue"><span
+                  class="bsb-tpl-font-hw display-2 text-accent fw-normal">sản xuất</span></mark></h1>
+            <p class="fs-4 mb-5">An Thịnh Softwares cung cấp gói giải pháp chuyển đổi số dành cho Doanh nghiệp.</p>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                src="https://player.vimeo.com/video/858921122?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Phần mềm quản lý sản xuất"></iframe></div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+          <div class="col-12 col-lg-5 text-center position-relative">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section - Services -->
 
     <!-- Section - Pricing -->
     <!-- Pricing 1 - Bootstrap Brain Component -->
-    <section id="scrollspyPricing" class="bsb-pricing-1 bsb-tpl-bg-sea-shell py-5 py-xl-8 bsb-section-py-xxl-1">
+    <section id="scrollspyPricing" class="bsb-pricing-1 bsb-tpl-bg-alice-blue py-5 py-xl-8 bsb-section-py-xxl-1">
       <div class="container">
         <div class="row gy-5 gy-lg-0 align-items-center">
           <div class="col-12 col-lg-12 wow slideInUp" data-wow-duration="1s" data-wow-delay="2s">
@@ -301,8 +240,8 @@
                     <div class="card border-0 border-bottom border-primary shadow-sm">
                       <div class="card-body p-4 p-xxl-5">
                         <h2 class="h4 mb-2">Basic</h2>
-                        <h4 class="display-3 fw-bold text-primary mb-0">1.900.000</h4>
-                        <p class="text-secondary mb-4"> 28.000.000 / 12 tháng</p>
+                        <h4 class="fw-bold text-primary mb-0" style="font-size: 3.5rem;">1.900.000</h4>
+                        <p class="text-secondary mb-4"> 22.800.000 / 12 tháng</p>
                         <ul class="list-group list-group-flush mb-4">
                           <li class="list-group-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -394,7 +333,7 @@
                       class="card border-0 border-bottom border-primary shadow-lg pt-md-4 pb-md-4 bsb-pricing-popular">
                       <div class="card-body p-4 p-xxl-5">
                         <h2 class="h4 mb-2">Premium</h2>
-                        <h4 class="display-3 fw-bold text-primary mb-0">2.850.000</h4>
+                        <h4 class="fw-bold text-primary mb-0" style="font-size: 3.5rem;">2.850.000</h4>
                         <p class="text-secondary mb-4"> 34.200.000 / 12 tháng</p>
                         <ul class="list-group list-group-flush mb-4">
                           <li class="list-group-item">
@@ -486,7 +425,7 @@
                     <div class="card border-0 border-bottom border-primary shadow-sm">
                       <div class="card-body p-4 p-xxl-5">
                         <h2 class="h4 mb-2">Enterprice</h2>
-                        <h4 class="display-3 fw-bold text-primary mb-0">4.845.000</h4>
+                        <h4 class="fw-bold text-primary mb-0" style="font-size: 3.5rem;">4.845.000</h4>
                         <p class="text-secondary mb-4"> 58.140.000 / 12 tháng</p>
                         <ul class="list-group list-group-flush mb-4">
                           <li class="list-group-item">
@@ -581,14 +520,168 @@
         </div>
       </div>
     </section>
+    <!-- Service 3 - Bootstrap Brain Component -->
+    <section id="scrollspyServices" class="py-5 py-xl-8 bsb-section-py-xxl-1">
+      <div class="container mb-5 mb-md-6 mb-xl-10 wow slideInDown" data-wow-duration="2s" data-wow-delay="5s">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center">
+            <h2 class="display-3 fw-bolder mb-4">Chúng tôi cung cấp các<br><mark
+                class="bsb-tpl-highlight bsb-tpl-highlight-yellow"><span
+                  class="bsb-tpl-font-hw display-1 text-accent fw-normal">Dịch Vụ</span></mark> bao gồm.</h2>
+          </div>
+        </div>
+      </div>
 
+      <div class="container overflow-hidden">
+        <div class="row gy-5 gx-md-4 gy-lg-0 gx-xxl-5 justify-content-center">
+          <div class="col-11 col-sm-6 col-lg-3 text-center wow slideInLeft" data-wow-duration="1s" data-wow-delay="2s">
+            <div class="badge bsb-tpl-bg-yellow text-primary p-3 mb-4">
+              <img src="./assets/img/icon/solution.png" width="26" height="26" />
+            </div>
+            <h4 class="mb-3">Phần mềm giải pháp</h4>
+            <p class="mb-3 text-secondary">Giải pháp của chúng tôi đưa ra giúp các doanh nghiệp ứng dụng công nghệ vào
+              hoạt động kinh doanh, góp phần nâng cao đáng kể...</p>
+            <a href="https://shopnow.com.vn/giai-phap.html" target="_blank"
+              class="fw-bold text-decoration-none link-primary">
+              Xem thêm
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg>
+            </a>
+          </div>
+          <div class="col-11 col-sm-6 col-lg-3 text-center wow slideInLeft" data-wow-duration="2s" data-wow-delay="3s">
+            <div class="badge bsb-tpl-bg-cyan text-primary p-3 mb-4">
+              <img src="./assets/img/icon/world-wide-web.png" width="26" height="26" />
+            </div>
+            <h4 class="mb-3">Thiết kế website</h4>
+            <p class="mb-3 text-secondary">Thiết kế website theo yêu cầu - giải pháp dành cho Website có tính năng
+              riêng, giao diện độc quyền theo yêu cầu của khách hàng...</p>
+            <a href="https://shopnow.com.vn/dich-vu-thiet-ke-website-theo-yeu-cau.html" target="_blank"
+              class="fw-bold text-decoration-none link-primary">
+              Xem thêm
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg>
+            </a>
+          </div>
+          <div class="col-11 col-sm-6 col-lg-3 text-center wow slideInLeft" data-wow-duration="3s" data-wow-delay="4s">
+            <div class="badge bsb-tpl-bg-yellow text-primary p-3 mb-4">
+              <img src="./assets/img/icon/domain.png" width="26" height="26" />
+            </div>
+            <h4 class="mb-3">Đăng ký tên miền - domain</h4>
+            <p class="mb-3 text-secondary">Đăng ký tên miền, kiểm tra tên miền domain nhanh chóng, nhiều đuôi tên miền
+              đẹp với giá đặc biệt và ưu đãi đi kèm...</p>
+            <a href="https://shopnow.com.vn/dich-vu-dang-ky-ten-mien-domain.html" target="_blank"
+              class="fw-bold text-decoration-none link-primary">
+              Xem thêm
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg>
+            </a>
+          </div>
+          <div class="col-11 col-sm-6 col-lg-3 text-center wow slideInLeft" data-wow-duration="4s" data-wow-delay="5s">
+            <div class="badge bsb-tpl-bg-cyan text-primary p-3 mb-4">
+              <img src="./assets/img/icon/web-hosting.png" width="26" height="26" />
+            </div>
+            <h4 class="mb-3">Hosting lưu trữ</h4>
+            <p class="mb-3 text-secondary">Đặc thù kỹ thuật của hệ điều hành hiện đại tân tiến nhất hiện nay, cập nhật
+              thường xuyên các bản vá lỗi...</p>
+            <a href="https://shopnow.com.vn/dich-vu-cung-cap-hosting-luu-tru-website.html" target="_blank"
+              class="fw-bold text-decoration-none link-primary">
+              Xem thêm
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg>
+            </a>
+          </div>
+          <div class="col-11 col-sm-6 col-lg-3 text-center wow slideInLeft" data-wow-duration="5s" data-wow-delay="5s">
+            <div class="badge bsb-tpl-bg-yellow text-primary p-3 mb-4">
+              <img src="./assets/img/icon/cloud.png" width="26" height="26" />
+            </div>
+            <h4 class="mb-3">Cloud Server</h4>
+            <p class="mb-3 text-secondary">Cloud Server tương thích với nhiều hệ điều hành từ Linux như CentOS, Redhat,
+              Fedora, Ubuntu, Debian, Opensuse đến Windows,...</p>
+            <a href="https://shopnow.com.vn/dich-vu-cung-cap-cloud-server.html" target="_blank"
+              class="fw-bold text-decoration-none link-primary">
+              Xem thêm
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg>
+            </a>
+          </div>
+          <div class="col-11 col-sm-6 col-lg-3 text-center wow slideInLeft" data-wow-duration="6s" data-wow-delay="5s">
+            <div class="badge bsb-tpl-bg-cyan text-primary p-3 mb-4">
+              <img src="./assets/img/icon/mail.png" width="26" height="26" />
+            </div>
+            <h4 class="mb-3">Email Server Pro</h4>
+            <p class="mb-3 text-secondary">Bạn cũng có thể yên tâm với dịch vụ Email vì tính bảo mật cực cao và tính ổn
+              định được rất nhiều chuyên gia trên thế giới đánh giá...</p>
+            <a href="https://shopnow.com.vn/dich-vu-email-server-pro.html" target="_blank"
+              class="fw-bold text-decoration-none link-primary">
+              Xem thêm
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg>
+            </a>
+          </div>
+          <div class="col-11 col-sm-6 col-lg-3 text-center wow slideInLeft" data-wow-duration="7s" data-wow-delay="5s">
+            <div class="badge bsb-tpl-bg-yellow text-primary p-3 mb-4">
+              <img src="./assets/img/icon/ssl-certificate.png" width="26" height="26" />
+            </div>
+            <h4 class="mb-3">SSL Chứng chỉ bảo mật</h4>
+            <p class="mb-3 text-secondary">Cài đặt chứng chỉ SSL cho website được xem là việc bảo mật vô cùng quan trọng
+              đối với mọi trang web. Chứng chỉ SSL là chứng chỉ...</p>
+            <a href="#!" target="_blank" class="fw-bold text-decoration-none link-primary">
+              Xem thêm
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Section - Contact -->
     <!-- Contact 2 - Bootstrap Brain Component -->
-    <section id="scrollspyContact" class="py-5 py-xl-8 bsb-section-py-xxl-1">
+    <section id="scrollspyContact" class="py-5 py-xl-8 bsb-tpl-bg-blue">
       <div class="container">
         <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
           <div class="col-12 col-lg-6 wow slideInLeft" data-wow-duration="1s" data-wow-delay="2s">
-            <img class="img-fluid rounded" loading="lazy" src="./assets/img/contact/contact-img-1.png" alt="">
+            <form class="p-3">
+              <h2 class="h1 mb-3 text-center">Đăng ký</h2>
+              <div class="mb-3">
+                <label for="inputFormName" class="form-label">Họ và tên <span class="text-danger">*</span></label>
+                <input autocomplete="false" type="text" class="form-control form-control-lg" id="inputFormName"
+                  onkeyup="validateName()" onfocusout="handleValidateForm()" required>
+                <span class='error-message' id='name-error'></span>
+              </div>
+              <div class="mb-3">
+                <label for="inputFormEmail" class="form-label">Email <span class="text-danger">*</span></label>
+                <input autocomplete="false" type="email" class="form-control form-control-lg" id="inputFormEmail"
+                  onkeyup="validateEmail()" onfocusout="handleValidateForm()" required>
+                <span class='error-message' id='email-error'></span>
+              </div>
+              <div class="mb-3">
+                <label for="inputFormDetail" class="form-label">Nội dung</label>
+                <textarea class="form-control form-control-lg" id="inputFormDetail" rows="3"></textarea>
+              </div>
+              <button id="btnSendForm" type="button" class="btn btn-primary w-100" onclick="handleSubmitForm()" disabled>Gởi</button>
+              <span class='error-message' id='submit-error'></span>
+            </form>
           </div>
           <div class="col-12 col-lg-6 wow slideInRight" data-wow-duration="3s" data-wow-delay="5s">
             <div class="row justify-content-xl-center">
@@ -649,7 +742,6 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <!-- Footer 2 - Bootstrap Brain Component -->
@@ -670,6 +762,19 @@
 
   </footer>
 
+
+  <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="liveToast" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive"
+      aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body" id="message-value">
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+          aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
   <!-- Javascript Files: Vendors -->
   <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
   <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
@@ -681,6 +786,7 @@
   <script src="./assets/controller/project-2.js"></script>
   <script src="./assets/controller/wave-bsb.js"></script>
   <script src="./assets/controller/wow.js"></script>
+  <script src="./assets/controller/form.js"></script>
   <script>
     Fancybox.bind('[data-fancybox="gallery"]', {
       //
