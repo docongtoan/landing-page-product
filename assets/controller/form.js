@@ -1,7 +1,18 @@
+document.getElementById('inputFormDetail').value = "Cần tư vấn về Gói giải pháp cho doanh nghiệp sản xuất";
 function validateName() {
     var name = document.getElementById('inputFormName').value;
     if(name.length == 0) {
       showValidate('Họ và tên bắt buộc nhập', 'name-error' , 'red')
+      return false;
+    }
+    showValidate('','name-error', 'red');
+    return true;
+}
+
+function validateDetail() {
+    var name = document.getElementById('inputFormDetail').value;
+    if(name.length == 0) {
+      showValidate('Nội dung bắt buộc nhập', 'name-error' , 'red')
       return false;
     }
     showValidate('','name-error', 'red');
@@ -31,6 +42,8 @@ function resetDataForm() {
     document.getElementById('inputFormEmail').value = '';
     document.getElementById('inputFormName').value = '';
     document.getElementById('inputFormDetail').value = '';
+    document.getElementById('btnSendForm').disabled = false;
+    document.getElementById('btnSendForm').innerText = 'Gởi';
 }
 
 function toastMessage(message,status){
@@ -45,7 +58,7 @@ function toastMessage(message,status){
 }
 
 function handleValidateForm(){
-    document.getElementById('btnSendForm').disabled = (!validateName() || !validateEmail()) ? true: false;
+    document.getElementById('btnSendForm').disabled = (!validateName() || !validateEmail() || !validateDetail()) ? true: false;
 }
   
 function handleSubmitForm(){
@@ -53,8 +66,8 @@ function handleSubmitForm(){
     email = document.getElementById('inputFormEmail').value;
     name = document.getElementById('inputFormName').value;
     detail = document.getElementById('inputFormDetail').value;
-    if (!validateName() || !validateEmail()) {
-        toastMessage('Vui lòng cung cấp đầy đủ các thông tin bắt buộc! Tên, Email.',500);
+    if (!validateName() || !validateEmail() || !validateDetail()) {
+        toastMessage('Vui lòng cung cấp đầy đủ các thông tin bắt buộc!.',500);
         return false;
     }
     else {
@@ -73,7 +86,8 @@ function handleSubmitForm(){
         body: formdata,
         redirect: 'follow'
         };
-
+        document.getElementById('btnSendForm').disabled = true;
+        document.getElementById('btnSendForm').innerText = 'Đang gởi yêu cầu! Vui lòng chờ trong vài giây...';
         fetch("https://shopnow.com.vn/lien-he.html", requestOptions)
         .then(response => {
             if(response.status == 200){
